@@ -25,3 +25,18 @@ document.querySelectorAll('.leadForm').forEach(function(f){
     });
   });
 });
+
+var mobileToggle = document.getElementById('mobileToggle');
+var navLinks = document.getElementById('navLinks');
+if (mobileToggle && navLinks) {
+  mobileToggle.addEventListener('click', function(){
+    var isOpen = navLinks.classList.toggle('nav-open');
+    mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  document.addEventListener('click', function(e){
+    if (!navLinks.contains(e.target) && !mobileToggle.contains(e.target)) {
+      navLinks.classList.remove('nav-open');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+}

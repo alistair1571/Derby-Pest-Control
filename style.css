@@ -45,6 +45,8 @@ img{max-width:100%;display:block}
 .dropdown-menu li a:hover{background:var(--grey-bg)}
 .header-cta{display:flex;align-items:center;gap:16px}
 .header-phone{font-weight:800;font-size:1.05rem;color:var(--blue-deep)}
+.view-all{text-align:center}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .btn{background:var(--cta);color:var(--cta-text);padding:12px 24px;border-radius:8px;font-weight:700;font-size:.95rem;display:inline-block;border:none;cursor:pointer;transition:background .15s}
 .btn:hover{background:var(--cta-hover)}
 .btn-outline{background:transparent;border:1.5px solid #fff;color:#fff}
@@ -157,9 +159,25 @@ img{max-width:100%;display:block}
 .mobile-call-bar{display:none}
 
 @media(max-width:920px){
-  .nav-links,.mobile-toggle{display:none}
+  .mobile-toggle{display:block;padding:4px 6px;cursor:pointer}
+  .nav-links{display:none}
+  .nav-links.nav-open{
+    display:flex;flex-direction:column;gap:0;position:absolute;top:100%;left:0;right:0;
+    background:#fff;border-top:1px solid var(--line);box-shadow:0 16px 28px rgba(25,62,46,.12);
+    padding:8px 20px 20px;z-index:50;max-height:80vh;overflow-y:auto;
+  }
+  .nav-links.nav-open li{width:100%}
+  .nav-links.nav-open>li>a{display:block;padding:14px 4px;border-bottom:1px solid var(--line)}
+  .dropdown-menu{position:static;display:none;box-shadow:none;border:none;padding:0 0 8px 16px;min-width:0}
+  .nav-open .dropdown-menu{display:block}
+  .header-inner{position:relative;flex-wrap:wrap}
+  .header-cta{gap:10px}
+  .header-cta .btn{padding:10px 14px;font-size:.85rem}
+  .mobile-toggle{font-size:1.4rem;line-height:1;padding:6px 8px}
   .grid-2{grid-template-columns:1fr}
   .grid-5{grid-template-columns:repeat(2,1fr)}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .header-phone{display:none}
   .footer-grid{grid-template-columns:1fr 1fr}
   .hero h1{font-size:2rem}
   .form-wrap{grid-template-columns:1fr}
@@ -175,6 +193,7 @@ img{max-width:100%;display:block}
 }
 @media(max-width:600px){
   .grid-5{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
   .trust-bar .container{justify-content:flex-start}
 }

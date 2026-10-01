@@ -41,7 +41,7 @@
 <header class="header">
   <div class="container header-inner">
     <a href="/" class="logo"><img src="/images/logo-dark.png" alt="Derby Pest Control" height="36"></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="/">Home</a></li>
       <li class="dropdown">
         <a href="/services/">Services</a>
@@ -62,6 +62,7 @@
     <div class="header-cta">
       <a href="tel:+441332496123" class="header-phone">01332 496 0123</a>
       <a href="/contact/" class="btn">Get a Quote</a>
+      <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
     </div>
   </div>
 </header>
@@ -84,7 +85,7 @@
     <h2 style="font-size:1.3rem;margin:0 0 10px">Wasps</h2>
     <p style="color:var(--ink-soft);max-width:640px;margin:0 0 18px">Wasp activity in Derby runs roughly April to September, peaking in August when a nest is at its largest. Almost every wasp job is treated in one visit.</p>
     
-    <div class="grid-5" style="grid-template-columns:repeat(4,1fr);margin-bottom:36px"><a href="/wasp-nest-removal/" class="service-card">
+    <div class="grid-4" style="margin-bottom:36px"><a href="/wasp-nest-removal/" class="service-card">
   <div class="service-icon" style="background:var(--grey-bg);color:var(--blue)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2c3 3 3 7 0 10-3-3-3-7 0-10z"/><path d="M12 12v10M7 22h10"/></svg></div>
   <h3>Wasp Nest Removal</h3>
   <p style="color:var(--ink-soft);font-size:.92rem">Usually treated and cleared in a single same-day visit.</p>
@@ -92,7 +93,7 @@
 </a></div><h2 style="font-size:1.3rem;margin:0 0 10px">Rodents</h2>
     <p style="color:var(--ink-soft);max-width:640px;margin:0 0 18px">Rats and mice need a similar approach, survey, tamper-resistant bait, proofing advice, but the entry points differ by size. Squirrels are a different problem entirely, legally as well as practically, since a trapped grey squirrel can't be released.</p>
     
-    <div class="grid-5" style="grid-template-columns:repeat(4,1fr);margin-bottom:36px"><a href="/rat-control/" class="service-card">
+    <div class="grid-4" style="margin-bottom:36px"><a href="/rat-control/" class="service-card">
   <div class="service-icon" style="background:var(--grey-bg);color:var(--blue)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M8 10h.01M16 10h.01M8 15c1.5 1 6.5 1 8 0"/></svg></div>
   <h3>Rat Control</h3>
   <p style="color:var(--ink-soft);font-size:.92rem">Full property check, tamper-resistant bait, included follow-up.</p>
@@ -110,7 +111,7 @@
 </a></div><h2 style="font-size:1.3rem;margin:0 0 10px">Insects</h2>
     <p style="color:var(--ink-soft);max-width:640px;margin:0 0 18px">Six different insects, six different treatments. Ants, cockroaches, fleas, carpet beetles, cluster flies and moths each need their own approach, which is why each one gets its own dedicated page rather than a single generic insect control visit.</p>
     <p style="margin:0 0 18px"><a href="/insect-control/" style="color:var(--blue);font-weight:700">Not sure which insect you have? Start here &rarr;</a></p>
-    <div class="grid-5" style="grid-template-columns:repeat(4,1fr);margin-bottom:36px"><a href="/ant-control/" class="service-card">
+    <div class="grid-4" style="margin-bottom:36px"><a href="/ant-control/" class="service-card">
   <div class="service-icon" style="background:var(--grey-bg);color:var(--blue)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="3"/><path d="M12 11v10M8 15l-3 2M16 15l3 2M8 19l-3 2M16 19l3 2"/></svg></div>
   <h3>Ant Control</h3>
   <p style="color:var(--ink-soft);font-size:.92rem">Trail and nest treatment for kitchens, gardens and patios.</p>
@@ -143,7 +144,7 @@
 </a></div><h2 style="font-size:1.3rem;margin:0 0 10px">Bed Bugs</h2>
     <p style="color:var(--ink-soft);max-width:640px;margin:0 0 18px">Bed bugs travel in on luggage, furniture or clothing rather than flying or crawling in on their own. Treatment covers the whole room, not just the mattress.</p>
     
-    <div class="grid-5" style="grid-template-columns:repeat(4,1fr);margin-bottom:36px"><a href="/bed-bug-treatment/" class="service-card">
+    <div class="grid-4" style="margin-bottom:36px"><a href="/bed-bug-treatment/" class="service-card">
   <div class="service-icon" style="background:var(--grey-bg);color:var(--blue)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M4 12h16"/></svg></div>
   <h3>Bed Bug Treatment</h3>
   <p style="color:var(--ink-soft);font-size:.92rem">Discreet, thorough treatment with a follow-up check included.</p>
@@ -151,7 +152,7 @@
 </a></div><h2 style="font-size:1.3rem;margin:0 0 10px">Inspection</h2>
     <p style="color:var(--ink-soft);max-width:640px;margin:0 0 18px">A survey rather than a treatment, useful before buying, letting, or just to settle uncertainty about something you've noticed.</p>
     
-    <div class="grid-5" style="grid-template-columns:repeat(4,1fr);margin-bottom:36px"><a href="/pest-inspection/" class="service-card">
+    <div class="grid-4" style="margin-bottom:36px"><a href="/pest-inspection/" class="service-card">
   <div class="service-icon" style="background:var(--grey-bg);color:var(--blue)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10" cy="10" r="6"/><path d="M15 15l6 6"/></svg></div>
   <h3>Pest Inspection</h3>
   <p style="color:var(--ink-soft);font-size:.92rem">A full property survey before you buy, let, or just to be sure.</p>

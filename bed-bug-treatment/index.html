@@ -41,7 +41,7 @@
 <header class="header">
   <div class="container header-inner">
     <a href="/" class="logo"><img src="/images/logo-dark.png" alt="Derby Pest Control" height="36"></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="/">Home</a></li>
       <li class="dropdown">
         <a href="/services/">Services</a>
@@ -62,6 +62,7 @@
     <div class="header-cta">
       <a href="tel:+441332496123" class="header-phone">01332 496 0123</a>
       <a href="/contact/" class="btn">Get a Quote</a>
+      <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
     </div>
   </div>
 </header>
@@ -73,7 +74,6 @@
     <div class="breadcrumb"><a href="/">Home</a> / <a href="/services/">Services</a> / <span>Bed Bug Treatment in Derby</span></div><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://derbypestcontrol.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://derbypestcontrol.co.uk/services/"}, {"@type": "ListItem", "position": 3, "name": "Bed Bug Treatment in Derby"}]}</script>
     <h1>Bed Bug Treatment in Derby</h1>
     <p class="lead">Discreet, whole room treatment for bed bugs, with a follow-up check included to confirm it's actually cleared.</p>
-    <div class="price-tag">From <strong>£150</strong> <span>per treatment, typical bedroom</span></div>
     <div class="hero-cta">
       <a href="tel:+441332496123" class="btn btn-lg">Call 01332 496 0123</a>
       <a href="#quote" class="btn btn-outline btn-lg">Get a Fixed Price</a>
@@ -81,6 +81,14 @@
   </div>
 </section>
 
+<div class="trust-bar">
+  <div class="container">
+    <span>BPCA-Standard Treatments</span>
+    <span>Same-Day Slots Available</span>
+    <span>Follow-Up Included</span>
+    <span>Fully Insured</span>
+  </div>
+</div>
 <section class="section">
   <div class="container">
     <div class="prose" style="max-width:800px">
@@ -161,7 +169,7 @@
       <h2>Other services</h2>
       <p>Dealing with something else? We cover these too.</p>
     </div>
-    <div class="grid-5" style="grid-template-columns:repeat(4,1fr)"><a href="/wasp-nest-removal/" class="service-card">
+    <div class="grid-4"><a href="/wasp-nest-removal/" class="service-card">
           <div class="service-icon" style="background:var(--grey-bg);color:var(--blue)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2c3 3 3 7 0 10-3-3-3-7 0-10z"/><path d="M12 12v10M7 22h10"/></svg></div>
           <h3>Wasp Nest Removal</h3>
           <span class="more">Learn more →</span>
